@@ -64,7 +64,7 @@ def get(logger=None,args=None):
     taskcla=[]
 
     # Others
-    f_name = 'asc_random'
+    f_name = 'asc_random_10'
 
     with open(f_name,'r') as f_random_seq:
         random_sep = f_random_seq.readlines()[args.idrandom].split()
