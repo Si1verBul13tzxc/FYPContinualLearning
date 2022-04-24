@@ -277,7 +277,7 @@ def train_config(parser):
 def load_pre_defined_args(args):
     # ============= dataset base ==================
     if args.task == 'asc':  # aspect sentiment classification
-        args.ntasks = 19
+        args.ntasks = 10
         args.num_train_epochs = 10
         args.xusemeval_num_train_epochs = 10
         args.bingdomains_num_train_epochs = 30
