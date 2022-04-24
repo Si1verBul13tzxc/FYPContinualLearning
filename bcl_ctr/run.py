@@ -54,10 +54,6 @@ elif args.multi_gpu:
     net = torch.nn.DataParallel(net)
     net = net.to(device)
 
-if args.print_report:
-    utils.print_model_report(net)
-
-
 # ----------------------------------------------------------------------
 # Start Training.
 # ----------------------------------------------------------------------
