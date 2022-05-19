@@ -163,7 +163,7 @@ class AscProcessor(DataProcessor):
         for (i, ids) in enumerate(lines):
             guid = "%s-%s" % (set_type, ids )
             term = lines[ids]['term']
-            text_a = "What do you think the " + term + " of it?"
+            text_a = term + ". What do you think of the " + term + " of it?"
             text_b = lines[ids]['sentence']
             label = lines[ids]['polarity']
             examples.append(
